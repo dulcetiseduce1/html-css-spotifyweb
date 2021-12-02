@@ -364,7 +364,7 @@ footer .fa-play-circle:hover{
 
 /* resize */
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 800px){
     
     .sidebar span{
         font-size: 12px;
@@ -469,28 +469,4 @@ footer .fa-play-circle:hover{
         margin-right: 10px;
     }
 
-}
-
-
-@media screen and (min-width: 700px){
-    main h3{
-        font-size: 16px;
-    }
-    .folder{
-        flex-direction: row;
-    }
-
-    .folder span{
-        margin-right: 10px;
-    }
-}
-
-@media screen and (min-width: 990px){
-    .box{
-        flex-basis: calc(100% /6);
-    }
-
-    main h3{
-        font-size: 15px;
-    }
 }
