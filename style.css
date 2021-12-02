@@ -1,0 +1,477 @@
+/* general  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+header{
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 40px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+main{
+    background-color: rgb(18, 4, 80);
+    flex-grow: 1;
+    height: calc( 100vh - 80px);
+    padding-top: 70px;
+    margin-bottom: 80px;
+    overflow-y: scroll;
+}
+
+footer{
+    flex-basis: 100%;
+    height: 80px;
+    background-color: rgb(49, 47, 47);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h2 , h3{
+    color: white;
+}
+
+h2{
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+span{
+    color: lightgray;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    margin-top: 100px;
+}
+
+
+/* utility  */
+
+.wrapper{
+    display: flex;
+    height: calc( 100vh - 80px);
+}
+
+figure{
+    position: relative;
+}
+
+main .fa-play-circle{
+    z-index: 2;
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+
+.footer-content {
+    display: flex;
+    width: 30%;
+}
+
+.selector{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.invisible{
+    display: none;
+}
+
+.sidebar{
+    flex-basis: 40px;
+    flex-shrink: 0;
+    height: calc( 100vh - 80px);;
+    display: flex;
+    flex-direction: column;
+    color: rgb(216, 210, 210);
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.sidebar li{
+    margin: 5px 0 5px 0;
+}
+
+.navigation a{
+    display: flex;
+    justify-content: center;
+}
+
+
+.bottom-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.fa-arrow-circle-down{
+    font-size: 12px;
+}
+
+.sidebar img{
+    height: 100%;
+    width: 90%;
+}
+
+.navigation a , .bottom-ul a{ 
+   display: flex;
+   align-items: center;
+}
+
+.sidebar hr{
+    display: none;
+}
+
+header a{
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    border-radius: 20px;
+    padding: 12px 25px 12px 25px;
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+
+main .main-navbar{
+    margin-top: 30px;
+}
+
+main nav{
+    margin-bottom: 50px;
+}
+
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main nav li{
+    height: 100%;
+    margin: 10px;
+}
+
+main nav a{
+    height: 100%;
+    color: grey;
+    font-size: 15px;
+}
+
+
+/* section popular */
+
+
+.round{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+/* FOOTER  */
+
+footer span {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer h3{
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-content:last-child{
+    justify-content: flex-end;
+}
+
+.footer-item{
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.volume{
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.volume span{
+    margin: 0 5px;
+}
+
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.selector{
+    flex-basis: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.selector i{
+    font-size: 20px;
+    margin: 0 5px 0 5px;
+}
+
+
+.bar{
+    margin: 5px 5px 0 5px;
+    flex-grow: 1;
+    height: 3px;
+    background-color: rgba(104, 100, 100, 0.966);
+    border-radius: 2px;
+}
+
+.fixed-bar{
+    width: 50%;
+}
+
+.progress-bar{
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-indicator{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50% , -40%);
+    display: none;
+}
+
+
+/* hover  */
+
+figure:hover img{
+    filter: opacity(0.7);
+    cursor: pointer;
+}
+
+figure:hover .fa-play-circle{
+    display: inline-block;
+ }
+
+.main-navbar a:hover{
+    color: white;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.sidebar span:hover{
+    color: white
+}
+
+.bar:hover .progress-bar{
+    background-color: yellowgreen;
+}
+
+.bar:hover .progress-indicator{
+    display: block;
+}
+
+footer .fa-play-circle:hover{
+    transform: scale(1.6);
+}
+
+
+/* resize */
+
+@media screen and (min-width: 500px){
+    
+    .sidebar span{
+        font-size: 12px;
+        color: rgb(138, 135, 135);
+        margin-bottom: 10px;
+    }
+
+    h3.invisible{
+        margin-left: 5px;
+        font-size: 1.5em;
+    }
+
+    .navigation a{
+        justify-content: flex-start;
+    }
+
+    .sidebar{
+        flex-basis: 200px;
+        flex-shrink: 0;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    main{
+        flex-grow: 1;
+    }
+
+    header{
+        left: 200px;
+    }
+
+    .sidebar li{
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .sidebar img{
+        width: 15%;
+        height: 15%;
+
+    }
+
+    #spot-logo{
+        width: 20%;
+        height: 20%;
+    }
+
+    .sidebar span{
+        margin-left: 5px;
+    }
+
+    .sidebar .fa-plus-square{
+       font-size: 3em;
+       margin-right: 10px;
+    }
+
+    .sidebar hr{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    
+    .sidebar .invisible {
+        display: inline;
+        font-size: 13px;
+        margin-right: 30px;
+    }
+    
+    .playlist{
+        margin-top: 30px;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .playlist a{
+        color: rgb(129, 126, 126);
+        margin: 5px;
+    } 
+
+
+    .bottom-ul{
+        margin-top: 30px;
+        display: block;
+    }
+
+    .bottom-ul img{
+        width: 10%;
+        height: 10%;
+    }
+    
+
+    .author{
+        display: flex;
+    }
+
+    .author span{
+        margin-right: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 700px){
+    main h3{
+        font-size: 16px;
+    }
+    .folder{
+        flex-direction: row;
+    }
+
+    .folder span{
+        margin-right: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 990px){
+    .box{
+        flex-basis: calc(100% /6);
+    }
+
+    main h3{
+        font-size: 15px;
+    }
+}
